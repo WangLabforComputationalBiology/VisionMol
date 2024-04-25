@@ -1,0 +1,422 @@
+{
+    "name": "GunInputAssets",
+    "maps": [
+        {
+            "name": "Hand Gun Input",
+            "id": "4ecf66b9-69e1-40ef-a07a-4378977293c3",
+            "actions": [
+                {
+                    "name": "TrackingState",
+                    "type": "Value",
+                    "id": "36cf5cea-96e6-46bf-80f8-f445756d897b",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "7afaf934-88cf-4125-88b6-5e3ac366780e",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "a7591b40-db32-48ea-a347-c6911a51e2ba",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "FunctionKey",
+                    "type": "Button",
+                    "id": "c27e2504-114e-4579-968e-8ed2036c97f5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PowerKey",
+                    "type": "Button",
+                    "id": "c74f8e46-061a-4954-95ab-2fcb3bed4853",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerKey",
+                    "type": "Button",
+                    "id": "c5184ac7-f9bb-4138-ae12-e15220e5eacb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GripDetection",
+                    "type": "Button",
+                    "id": "76a4f92b-7292-4f26-9212-2be1560f25e4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerValue",
+                    "type": "Value",
+                    "id": "fe697dea-881b-45db-95ca-3f3a4b0b66f5",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ChamberSlide",
+                    "type": "Value",
+                    "id": "eef6bb87-46f9-4c92-a41a-a6f9baa7aba2",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MagLoad",
+                    "type": "Button",
+                    "id": "732d7764-b2bc-41b4-a8ee-c3abe69d58ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MagRelease",
+                    "type": "Button",
+                    "id": "13589fb5-942e-45f8-8cb7-364dccd98422",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "04cd2a92-1c12-4960-90ca-dd2b61e488ac",
+                    "path": "<HandGunInputDevice>{HandGun}/TrackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "784e23c8-6370-424a-8019-3f14fec8a9ef",
+                    "path": "<HandGunInputDevice>{HandGun}/Rotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d28d40e7-bbc3-4f65-b9e4-76fcc1167edf",
+                    "path": "<HandGunInputDevice>{HandGun}/Position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3131875-d8b2-418a-9b6e-ee874a189ef5",
+                    "path": "<HandGunInputDevice>{HandGun}/Function",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FunctionKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8634da1-4cdd-4a4c-a2f6-48852ca24164",
+                    "path": "<HandGunInputDevice>{HandGun}/Power",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PowerKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74dfc1de-7441-4658-8c73-f47913d91773",
+                    "path": "<HandGunInputDevice>{HandGun}/Trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad2ed98e-440a-49b5-9fe8-527d8af2df01",
+                    "path": "<HandGunInputDevice>{HandGun}/Grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripDetection",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0507a0c-93ca-4eb8-9dc2-1afd747c16fc",
+                    "path": "<HandGunInputDevice>{HandGun}/TriggerValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "adb325c8-841b-41e7-823a-fffdf888ad21",
+                    "path": "<HandGunInputDevice>{HandGun}/ChamberSlide",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChamberSlide",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52f795c6-6790-4565-9a87-e5fa624f5049",
+                    "path": "<HandGunInputDevice>{HandGun}/MagLoad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MagLoad",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e5cbc774-a3bf-4368-8426-09f67cb8fed1",
+                    "path": "<HandGunInputDevice>{HandGun}/MagRelease",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MagRelease",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Long Gun Input",
+            "id": "03f6ef5b-7512-4b3a-8b2b-28da75cf4fc2",
+            "actions": [
+                {
+                    "name": "TrackingState",
+                    "type": "Value",
+                    "id": "64323e32-89bf-4658-8af6-f7fcc81f886b",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "f1141b00-e45a-4c87-8b2b-6c755aed6270",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "e00b4690-c6af-4ef2-9c87-b1f6e7d2383e",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PowerKey",
+                    "type": "Button",
+                    "id": "9f352aa5-52c9-4968-8633-d3ceba69b35a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerKey",
+                    "type": "Button",
+                    "id": "75fb57a5-c94d-4111-9552-cd4b250d713a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerValue",
+                    "type": "Value",
+                    "id": "938ad54a-5343-405a-8bdb-1f9f107b3376",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ChamberSlide",
+                    "type": "Value",
+                    "id": "e007f059-1117-4aed-b524-2e2bd088dfcf",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MagLoad",
+                    "type": "Button",
+                    "id": "fc75310e-a535-42f8-a1f5-274785374908",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecureKeyState",
+                    "type": "Value",
+                    "id": "e8187c7b-600e-41aa-94cf-48ed63addb37",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "287c097a-863d-4cf2-bef1-a6014912a188",
+                    "path": "<LongGunInputDevice>{LongGun}/TrackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c09961b-e506-48ec-b4c9-22a038850bda",
+                    "path": "<LongGunInputDevice>{LongGun}/Rotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "315ae46c-2a5c-4e77-8059-096b84ea5ba6",
+                    "path": "<LongGunInputDevice>{LongGun}/Position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33f200e8-76b4-460b-ae94-b290ddace55d",
+                    "path": "<LongGunInputDevice>{LongGun}/Power",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PowerKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "99ff9378-e361-4486-81e9-8d841335857b",
+                    "path": "<LongGunInputDevice>{LongGun}/Power",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a821aaa3-7a8b-4a1e-aa65-c4590aa5b2bd",
+                    "path": "<LongGunInputDevice>{LongGun}/TriggerValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc339683-64a8-4ce7-a464-5ae089ce16aa",
+                    "path": "<LongGunInputDevice>{LongGun}/ChamberSlide",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChamberSlide",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "13a59860-d92a-4598-acda-5de56b6688ba",
+                    "path": "<LongGunInputDevice>{LongGun}/MagLoad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MagLoad",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad3771c8-1656-43a6-a982-0406cd1a1487",
+                    "path": "<LongGunInputDevice>/SecureKeyState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecureKeyState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

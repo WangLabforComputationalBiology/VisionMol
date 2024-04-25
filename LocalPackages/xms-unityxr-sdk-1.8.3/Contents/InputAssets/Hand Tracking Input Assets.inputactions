@@ -1,0 +1,382 @@
+{
+    "name": "Hand Tracking Input Assets",
+    "maps": [
+        {
+            "name": "LeftHand",
+            "id": "5e92ea43-2873-4403-a9ce-8be4f5b4c301",
+            "actions": [
+                {
+                    "name": "isTracked",
+                    "type": "Button",
+                    "id": "9dfb4ae8-149a-4bb6-8026-2c9844bdcdaf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TrackingState",
+                    "type": "Value",
+                    "id": "a0b21e3e-7981-4a13-b1ee-fc4ffa022a27",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PalmPosition",
+                    "type": "Value",
+                    "id": "f5c7edfd-083a-486c-8de2-d182e1cf38e8",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PalmRotation",
+                    "type": "Value",
+                    "id": "a5b68d02-d260-46b5-9cc5-dd1913c6b539",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "d7f74dd7-4908-4428-9f3a-742978f32279",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SelectValue",
+                    "type": "Value",
+                    "id": "f824d86b-43ed-46e9-94d1-891d7e059ea4",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ac498d0d-1874-4e3e-b476-c4f8d511d109",
+                    "path": "<XimmerseXRHandInput>{LeftHand}/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XimmerseXRGesture",
+                    "action": "isTracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33f0b255-a82a-420c-aeb5-9b68a049faf1",
+                    "path": "<XimmerseXRHandInput>{LeftHand}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XimmerseXRGesture",
+                    "action": "TrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74c54323-dd9c-463d-821f-fd3532f6d460",
+                    "path": "<XimmerseXRHandInput>{LeftHand}/isGrasp",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "165878a3-707c-4743-b49d-86874531472f",
+                    "path": "<XimmerseXRHandInput>{LeftHand}/gripValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "017c0874-cefa-4861-abc3-3f2a19421fe0",
+                    "path": "<XimmerseXRHandInput>{LeftHand}/palmPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PalmPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4623533-09cb-487b-a169-06bf2e9235b8",
+                    "path": "<XimmerseXRHandInput>{LeftHand}/palmRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PalmRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "RightHand",
+            "id": "72a1399d-6fa5-4087-9d90-f04b853098b8",
+            "actions": [
+                {
+                    "name": "isTracked",
+                    "type": "Button",
+                    "id": "111857b2-f01f-4ccd-a79e-b671c06b559f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TrackingState",
+                    "type": "Value",
+                    "id": "2adfc30b-ae8b-416d-b2dd-7c13ee99be61",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PalmPosition",
+                    "type": "Value",
+                    "id": "805041a5-3e60-41c3-99b2-6eac888b99ff",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PalmRotation",
+                    "type": "Value",
+                    "id": "63705d45-b418-45f9-beb2-541956c3ae9b",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "7abdee60-a2bf-4a56-adf6-72e1b27a7e86",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SelectValue",
+                    "type": "Value",
+                    "id": "1947cacf-8768-46e1-b65d-9b7c4511e32b",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "24052a08-d3d1-4889-8efa-5a29adc263d2",
+                    "path": "<XimmerseXRHandInput>{RightHand}/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XimmerseXRGesture",
+                    "action": "isTracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df1450ef-4005-49b2-8806-8136759adee7",
+                    "path": "<XimmerseXRHandInput>{RightHand}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XimmerseXRGesture",
+                    "action": "TrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e2abe17c-9295-4148-a80f-3347fb1a0759",
+                    "path": "<XimmerseXRHandInput>{RightHand}/palmPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XimmerseXRGesture",
+                    "action": "PalmPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "91d0b241-9bfa-43d7-b3b1-acd5163424dc",
+                    "path": "<XimmerseXRHandInput>{RightHand}/palmRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XimmerseXRGesture",
+                    "action": "PalmRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1368abf0-15c7-406b-9014-eaa2709b82f1",
+                    "path": "<XimmerseXRHandInput>{RightHand}/isGrasp",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XimmerseXRGesture",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d7e9c7cb-e2ab-40c5-a4b1-8af4b237de75",
+                    "path": "<XimmerseXRHandInput>{RightHand}/gripValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XimmerseXRGesture",
+                    "action": "SelectValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "GazeInput",
+            "id": "e1eef75e-6578-4955-b0cb-420eef15fed4",
+            "actions": [
+                {
+                    "name": "GazeRayState",
+                    "type": "Value",
+                    "id": "d9545aab-d088-4934-a5bd-3ae5c3a10d2d",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GazeRayOrigin",
+                    "type": "Value",
+                    "id": "7ecb411f-93a6-4edc-a348-a0712314927d",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GazeRayForward",
+                    "type": "Value",
+                    "id": "2e6f9594-5408-47e9-967f-ff8147643482",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GazeSelect",
+                    "type": "Button",
+                    "id": "67d3d927-25f7-490f-83e6-e8ce1a43ff5d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GazeSelectValue",
+                    "type": "Value",
+                    "id": "4d82be23-2b27-4544-a29f-3f8c9fc022ef",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8095e413-2016-4915-8c46-0db1c3acfb2a",
+                    "path": "<XimmerseXRGazeInput>/gazeRayOrigin",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeRayOrigin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3eb54592-fcc1-4e16-8ab6-ed89c9b36f0b",
+                    "path": "<XimmerseXRGazeInput>/gazeRayState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeRayState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc193cd3-1edc-4f46-8d76-93b0eb63ed65",
+                    "path": "<XimmerseXRGazeInput>/gazeRayRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeRayForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d3864d6-1c52-49be-ac08-8f0e64e05108",
+                    "path": "<XimmerseXRGazeInput>/gazeSelectValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeSelectValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fd8def27-6c98-4dfb-9bda-f75503e3820d",
+                    "path": "<XimmerseXRGazeInput>/gazeSelect",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeSelect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "XimmerseXRGesture",
+            "bindingGroup": "XimmerseXRGesture",
+            "devices": [
+                {
+                    "devicePath": "<XimmerseXRGesture>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

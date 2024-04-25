@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8f9643084e7b84786a72ba40c223a7fd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - reticleTexture: {fileID: 2800000, guid: f240890f474e26e46936d5c4d2017de1, type: 3}
+  - defaultTrackingProfile: {fileID: 11400000, guid: c641667a0d27d3b4484c44ccba14b111, type: 2}
+  - defaultGroundPlaneLayoutConfig: {fileID: 11400000, guid: 6f7a3e78cb3c0364fab924de8d67d3a7, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

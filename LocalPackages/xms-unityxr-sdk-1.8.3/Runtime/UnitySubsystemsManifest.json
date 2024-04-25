@@ -1,0 +1,15 @@
+{
+	"name": "XimmerseXR",
+	"version": "0.0.1",
+	"libraryName": "unity_native_api",
+	"displays": [
+		{
+			"id": "XmsXRDisplay"
+		}
+	],
+	"inputs": [
+		{
+			"id": "XmsXRInput"
+		}
+	]
+}

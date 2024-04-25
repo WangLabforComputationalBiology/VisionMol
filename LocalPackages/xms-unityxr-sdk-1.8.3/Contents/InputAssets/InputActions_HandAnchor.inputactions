@@ -1,0 +1,512 @@
+{
+    "name": "InputActions_HandAnchor",
+    "maps": [
+        {
+            "name": "Left Hand Anchors",
+            "id": "2145a3b4-2685-4e90-bbf2-2d94dbf5482a",
+            "actions": [
+                {
+                    "name": "TrackingState",
+                    "type": "Value",
+                    "id": "e32fb4ed-fe7f-4245-a003-0dba8e5eba53",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "68413927-caec-4b3a-9759-1f6ad5442ac7",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "AnchorRayOrigin",
+                    "type": "Value",
+                    "id": "9a00db04-88c8-4cd2-be08-0264c4da1f63",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "AnchorRayRotation",
+                    "type": "Value",
+                    "id": "19b6a18c-aba7-4a1b-a101-64c87ecb9d47",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GripValue",
+                    "type": "Value",
+                    "id": "6976e817-d341-46c8-a328-28823624dd81",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "IsGrip",
+                    "type": "Button",
+                    "id": "5ebcc305-20b3-4229-a58a-5a394d83dad6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "IsTracked",
+                    "type": "Button",
+                    "id": "d273be25-7bf4-4287-b512-caba72d0eac5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HandRayOrigin",
+                    "type": "Value",
+                    "id": "ee4a7330-cb1a-4791-bef0-a0fd6380d7b5",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "HandRayRotation",
+                    "type": "Value",
+                    "id": "a367c86b-7d4a-4eab-84fe-b6edecdbd73e",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "283273b2-5753-4ad1-b6e5-ef7f88dd20da",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d3049b6-60cb-426f-8622-4d625334dceb",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/anchorPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "937f4cd0-9a3a-4ee2-ad0e-e0749eeca0da",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/anchorRayOrigin",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AnchorRayOrigin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "23a80fbd-722e-427f-a36d-870ff8195dca",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/anchorRayRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AnchorRayRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1fcfaf70-0266-4f9a-88e1-bd495cab72e7",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/gripValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9f087ccd-198e-483d-9e06-2e9947641c08",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/isGrip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "IsGrip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "de4a239b-c21f-4c0a-908b-1efb6b4fe067",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "IsTracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ff3abadb-0f59-4001-89e7-bc6314295a4f",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/handRayRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandRayRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0f26367e-b12d-4608-bbef-06e5af24dc43",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/handRayOrigin",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandRayOrigin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Right Hand Anchors",
+            "id": "26602a2d-1d65-4675-a30c-4bd66761805e",
+            "actions": [
+                {
+                    "name": "TrackingState",
+                    "type": "Value",
+                    "id": "d339166a-d3d2-47a7-bc91-13f852218a61",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "7012856c-e859-4776-944e-ae15f5005a4c",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "AnchorRayOrigin",
+                    "type": "Value",
+                    "id": "cb8949b2-db11-4a2b-83d1-2ddc6682a580",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "AnchorRayRotation",
+                    "type": "Value",
+                    "id": "dcb76259-2f5b-4d2f-8d8f-929e201247d2",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GripValue",
+                    "type": "Value",
+                    "id": "88fcf36e-1b25-472a-8f06-848dd2a7d67c",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "IsGrip",
+                    "type": "Button",
+                    "id": "42c0e077-3e71-42eb-965a-2105283f6332",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "IsTracked",
+                    "type": "Button",
+                    "id": "9b0bfeec-913f-48f2-92c4-eb9f95ed9b4b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HandRayOrigin",
+                    "type": "Value",
+                    "id": "5393536a-f088-42dc-aa9f-7a97202eff30",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "HandRayRotation",
+                    "type": "Value",
+                    "id": "347160a4-1a81-492e-bfd7-67ff4a6e6cad",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c24dd83f-1c6f-4e6d-a5b1-824f20035288",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2ae2efd5-110b-4798-8c79-a60aa0070ecf",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/anchorPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34095a33-06e6-4e90-851c-7b1b48cb3374",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/anchorRayOrigin",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AnchorRayOrigin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "523d48c8-2ccc-4b98-a12f-46b2d00c9dc2",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/anchorRayRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AnchorRayRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "edd9a602-0ae0-489e-9e57-c6af85d3e82b",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/gripValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GripValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "11db81fa-1aa3-4cfd-8a31-1dcb462aa650",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/isGrip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "IsGrip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f093658d-f438-4556-babb-28480caa3158",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "IsTracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b6441eba-6e9c-443a-8e3f-d1637e27d570",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/handRayRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandRayRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc0ba5ed-1324-4bbf-81c4-0be257e4e9a7",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/handRayOrigin",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandRayOrigin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "GazeInput",
+            "id": "185db509-32be-4b83-9d67-3fe905acf9fc",
+            "actions": [
+                {
+                    "name": "GazeRayState",
+                    "type": "Value",
+                    "id": "359bd343-50bf-471c-927e-6f839051a051",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GazeRayOrigin",
+                    "type": "Value",
+                    "id": "63441a20-8ab0-459a-957e-f57a0910ede9",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GazeRayForward",
+                    "type": "Value",
+                    "id": "5c870190-88d6-4e01-b21f-fcce401c79bc",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GazeSelect",
+                    "type": "Button",
+                    "id": "bcf7785b-17d2-4b21-b51d-c435bf2c0b82",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GazeSelectValue",
+                    "type": "Value",
+                    "id": "9f08d9ac-a763-4df4-af63-a79156199a82",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "742e8915-fc2f-4ee2-8df7-a83a70680547",
+                    "path": "<XimmerseXRGazeInput>/gazeRayOrigin",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeRayOrigin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "376f18e3-614f-4588-be85-6c241ef8a627",
+                    "path": "<XimmerseXRGazeInput>/gazeRayState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeRayState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b63de491-e526-4e57-8420-b82c422e0336",
+                    "path": "<XimmerseXRGazeInput>/gazeRayRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeRayForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "429333f5-d039-47cf-93ad-141bb0d9aa33",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/gripValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeSelectValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8e10937d-b9aa-45e7-800f-f9a034dbd787",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/gripValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeSelectValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "988b5d40-158b-4b59-a885-5922301b8e9c",
+                    "path": "<HandAnchorInputDevice>{LeftHandAnchor}/isGrip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeSelect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e641c748-c064-4541-992f-69803c672eba",
+                    "path": "<HandAnchorInputDevice>{RightHandAnchor}/isGrip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GazeSelect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

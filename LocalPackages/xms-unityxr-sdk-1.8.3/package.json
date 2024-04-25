@@ -1,0 +1,28 @@
+{
+  "name": "com.ximmerse.xr",
+  "displayName": "Ximmerse XR Plugin",
+  "version": "1.8.3",
+  "unity": "2019.4",
+  "description": "Provides rendering and input support for ximmerse XR.",
+  "keywords": [
+    "ximmerse",
+    "vr",
+    "xr",
+    "reality",
+    "xreditorsubsystem"
+  ],
+  "dependencies": {
+    "com.unity.xr.management": "3.2.9",
+    "com.unity.xr.legacyinputhelpers": "2.1.4",
+    "com.unity.xr.arsubsystems": "4.1.9",
+    "com.unity.xr.interaction.toolkit": "2.0.0",
+    "com.unity.inputsystem": "1.3.0"
+  },
+  "samples": [
+    {
+      "displayName": "Hello Unity",
+      "description": "Basic sample, minimal project setup.",
+      "path": "Samples~/hello-unity"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Ximmerse.XR.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.XR.Management.Editor",
+        "Unity.XR.Management",
+        "Ximmerse.XR",
+        "Unity.XR.CoreUtils"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.management",
+            "expression": "3.2.0",
+            "define": "XR_MGMT_GTE_320"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,428 @@
+{
+    "name": "Marker Controller Input Asset",
+    "maps": [
+        {
+            "name": "LeftMarkerController",
+            "id": "42fd4dac-a763-44e0-a2e7-410089778528",
+            "actions": [
+                {
+                    "name": "LeftApp",
+                    "type": "Button",
+                    "id": "8ac4dc24-636e-49a9-bbeb-fa470e48b3dd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftHome",
+                    "type": "Button",
+                    "id": "fde41e01-d4d4-49d1-ae72-48d6c0ea81d0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftTouch",
+                    "type": "Button",
+                    "id": "b9452f11-bf97-4040-9122-c67fe722f716",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftTrigger",
+                    "type": "Button",
+                    "id": "62dec894-5e5e-45ad-aca8-2a15bfc7afe9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftTriggerValue",
+                    "type": "Value",
+                    "id": "7e11aa47-a289-4f15-9c0c-48c9c98446a1",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "80a5587f-c9ba-4630-8110-4f544dc82019",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "f197dac2-8070-40bd-9bf7-208f2b62898c",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "TrackingState",
+                    "type": "Value",
+                    "id": "584bdd24-f7a5-4354-85ee-d93fb042fb75",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ImuRotation",
+                    "type": "Value",
+                    "id": "2c32e39c-b14c-413e-a4a5-bb41a5657394",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ConnectState",
+                    "type": "Value",
+                    "id": "8ececacd-81e1-4ca9-9d7d-3622e86b17cd",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "80b223cb-01da-4516-8202-0f0a315254d7",
+                    "path": "<MarkerControllerInput>/LeftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "258d4643-ca40-4420-804c-6fc911b786ca",
+                    "path": "<MarkerControllerInput>/LeftAPP",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftApp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "529aee54-5e02-4ae1-a3fa-c61a84083b64",
+                    "path": "<MarkerControllerInput>/LeftHome",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHome",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bf51437a-be8e-4033-90f4-d43f6b5c205a",
+                    "path": "<MarkerControllerInput>/LeftTouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1c1e3742-bef4-4ea6-ba6b-7e63235626e4",
+                    "path": "<MarkerControllerInput>/LeftTriggerValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftTriggerValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "27e3970d-07f7-4412-81e6-6564f5d37713",
+                    "path": "<MarkerControllerInput>/LeftMarkerControllerPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b467f7e-928b-4232-a852-c70011e8b4c8",
+                    "path": "<MarkerControllerInput>/LeftMarkerControllerRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9b863e68-cb83-4686-b7d5-f9e87a558484",
+                    "path": "<MarkerControllerInput>/LeftMarkerControllerTrackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "350eefb3-5797-4bfd-a4e8-7645c80b0a51",
+                    "path": "<MarkerControllerInput>/LeftMarkerControllerImuRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ImuRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d5cdb239-9639-449b-b211-8e5ac380aa5a",
+                    "path": "<MarkerControllerInput>/LeftMarkerControllerConnectState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ConnectState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "RightMarkerController",
+            "id": "f65c77d1-e6ec-4a55-b024-35a18ec69d1b",
+            "actions": [
+                {
+                    "name": "RightApp",
+                    "type": "Button",
+                    "id": "ac8c2a77-ae09-46c1-9854-43ad145ce41b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightHome",
+                    "type": "Button",
+                    "id": "78dcbac9-d12d-4a5f-9497-9c9bcee125fd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightTouch",
+                    "type": "Button",
+                    "id": "70f216c3-53b8-47cd-8360-f2ef1cdb96c1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightTrigger",
+                    "type": "Button",
+                    "id": "9ad01ccc-ee32-4895-817a-c6f72f69484b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightTriggerValue",
+                    "type": "Value",
+                    "id": "42f8c5cb-3e46-4613-8238-713913f68ce7",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "d8680065-9d5f-43bb-bded-e2273785746f",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "567221d9-457a-444d-9d59-6dbad4d5b43f",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "TrackingState",
+                    "type": "Value",
+                    "id": "1328ef8a-e8c5-4765-9511-d25f862c24f8",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ImuRotation",
+                    "type": "Value",
+                    "id": "b1a8a37f-5f6c-49b1-96cf-e39009ea411a",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ConnectState",
+                    "type": "Value",
+                    "id": "77975717-a014-4d33-828d-a11cbf22ad23",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d09a90e7-0169-4e6e-ac20-e3b5d0e18def",
+                    "path": "<MarkerControllerInput>/RightMarkerControllerTrackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b96429ff-1bcd-49bc-94b1-64307b17ae87",
+                    "path": "<MarkerControllerInput>/RightMarkerControllerRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a2f68471-767b-4fac-927a-cd330ca76446",
+                    "path": "<MarkerControllerInput>/RightMarkerControllerPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3a40498e-8c39-4607-93f8-4e6c68ac233e",
+                    "path": "<MarkerControllerInput>/RightTriggerValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightTriggerValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c82d3a19-63f2-40b7-b5c1-112baf2e4a35",
+                    "path": "<MarkerControllerInput>/RightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "290a7fb5-f824-46df-9441-ef716247858d",
+                    "path": "<MarkerControllerInput>/RightTouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b7abb98-81e5-498f-b195-8941c5648029",
+                    "path": "<MarkerControllerInput>/RightHome",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightHome",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f2450665-a31e-4d49-8de3-c5bb10a4b07f",
+                    "path": "<MarkerControllerInput>/RightAPP",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightApp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "709c3f28-4ac6-4627-891e-1420b6c53f35",
+                    "path": "<MarkerControllerInput>/RightMarkerControllerConnectState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ConnectState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ed6d8e49-9dfd-4694-8f1b-d1e00c6b8d18",
+                    "path": "<MarkerControllerInput>/RightMarkerControllerImuRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ImuRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Marker",
+            "bindingGroup": "Marker",
+            "devices": []
+        }
+    ]
+}

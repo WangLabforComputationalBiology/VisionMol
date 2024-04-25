@@ -1,0 +1,28 @@
+{
+    "name": "BinaryCharm.TextColorButtons.Runtime",
+    "references": [
+        "UnityEngine.UI",
+        "Unity.TextMeshPro",
+        "BinaryCharm.SemanticColorPalette.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.textmeshpro",
+            "expression": "2.0.1",
+            "define": "TEXTMESHPRO_PRESENT"
+        },
+        {
+            "name": "com.binarycharm.semantic-color-palette",
+            "expression": "1.0.0",
+            "define": "SEMANTICCOLORPALETTE_PRESENT"
+        }
+    ],
+    "noEngineReferences": false
+}

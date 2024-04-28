@@ -1,0 +1,24 @@
+{
+  "name": "com.binarycharm.text-color-buttons",
+  "version": "1.1.0",
+  "displayName": "Text Color Buttons",
+  "description": "Button extension to have labels color changing according to button states",
+  "unity": "2019.4",
+  "documentationUrl": "https://www.binarycharm.com/tech/unity-text-color-buttons/docs/06ERJ9xa29Q6KWPbyguMiX5UcfApHxuN/docfx",
+  "hideInEditor": false,
+  "dependencies": {
+    "com.unity.ugui": "1.0.0"
+  },
+  "author": {
+    "name": "Binary Charm",
+    "email": "info@binarycharm.com",
+    "url": "https://www.binarycharm.com"
+  },
+  "samples": [
+    {
+      "displayName": "Demo",
+      "description": "Sample scene for testing and showing the package features",
+      "path": "Samples~/Demo"
+    }
+  ]
+}

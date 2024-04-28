@@ -1,0 +1,5 @@
+﻿[assembly: System.Reflection.AssemblyCompany("Binary Charm Ltd")]
+[assembly: System.Reflection.AssemblyTitle("Text Color Buttons Demo Runtime Assembly")]
+[assembly: System.Reflection.AssemblyCopyright("Copyright 2022.")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("BinaryCharm.Samples.TextColorButtons.Editor")]
+[assembly: UnityEngine.Scripting.Preserve]

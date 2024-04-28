@@ -1,0 +1,17 @@
+{
+    "name": "BinaryCharm.Samples.UI.TextColorButtons",
+    "references": [
+        "BinaryCharm.Samples.UI.Runtime",
+        "BinaryCharm.TextColorButtons.Runtime",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

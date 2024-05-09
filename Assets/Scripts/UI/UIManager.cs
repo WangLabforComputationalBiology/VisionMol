@@ -2165,7 +2165,7 @@ public class UIManager : MonoBehaviour {
 	}
 	public void showVDW() {
 		APIPython.showAs("hb");
-		APIPython.setHyperBallMetaphore("Balls&Sticks");
+		APIPython.setHyperBallMetaphore("VdW");
 	}
 
 	void LateUpdate() {

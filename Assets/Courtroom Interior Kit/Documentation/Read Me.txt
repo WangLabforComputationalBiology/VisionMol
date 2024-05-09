@@ -1,0 +1,30 @@
+Documentation of Courtroom Interior Kit
+
+In this package, we have created all the models separately, all the models are reuseable and 
+it depends upon us that how we can use and place them in the scene.
+
+We have created multiple props for this scene. You can create your own scene by using these props.
+
+Models are made with Materials. The Courtroom Interior Kit consists of different objects created individually,
+so you can use them to create an intuitive and eye-catching user interface for your 3D game or animated video. 
+The vectors can be edited and placed at any scene in the game/video to give it a more defined look.
+
+We have different folders:
+
+1) Material:
+	Models are madeup with 10 main Materials.
+2) Models: 
+	You will find models in Model folder.
+3) Texture: 
+	You will find 5 folders, each containing Albaedo, Normal and mettalic files.
+3) Prefabs: 
+	All models have prefabs in the prefabs folder. More than 40 prebas are included in this pack.
+4) Scene: 
+	Demo scene is included in this folder, you can see that we used all the props to create courtroom interior scene.
+You can customize this scene by placing these props according to your own need to create a great scene.
+5) Documentation: 
+	Read Me File contains all the necessory information related to the package. 
+
+
+All the prefabs are created, you can use each prefabs according to your environment needs.
+You just need to drag and drop each prefab whereever you want. Each objects are scable, you can transform and rotate each object.

@@ -437,7 +437,7 @@ public class SurfaceRepresentation : ISurfaceRepresentation {
         mat.SetFloat("_Glossiness", 0.0f);
         mat.SetFloat("_Metallic", 0.0f);
         if (useAO) {
-            mat.SetFloat("_AOIntensity", 1.03f);
+            mat.SetFloat("_AOIntensity", 0.03f);
             mat.SetFloat("_AOPower", 8.0f);
         }
         else {

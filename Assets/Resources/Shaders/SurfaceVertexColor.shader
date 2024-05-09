@@ -6,7 +6,7 @@ Shader "Custom/SurfaceVertexColor" {
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 		_Glossiness ("Smoothness", Range(0,1)) = 0.5
 		_Metallic ("Metallic", Range(0,1)) = 0.0
-		_AOIntensity ("AO Intensity", Range(0, 1.25)) = 0
+		_AOIntensity ("AO Intensity", Range(0, 1.25)) = 0.03
 		_AOPower ("AO Power", Range(1, 30)) = 10
 
         [Toggle] _UseFog ("Enable fog", Float) = 0.0

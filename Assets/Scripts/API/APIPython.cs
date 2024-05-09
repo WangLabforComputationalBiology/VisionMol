@@ -83,10 +83,40 @@ public class APIPython : MonoBehaviour {
     }
 
 
-    /// <summary>
-    /// Allow to call python API commands and record them in the history from C#
-    /// </summary>
-    public static void ExecuteCommand(string command) {
+
+
+            //获得编写的ProteinManager脚本引用
+            public static GameObject getProteinController()
+            {
+                GameObject ProteinController = null;
+
+                GameObject canvas = GameObject.Find("Canvas");
+                if (canvas != null)
+                {
+                    Transform proteinController = canvas.transform.Find("ProteinController");
+
+                    if (proteinController != null)
+                    {
+                        ProteinController = proteinController.gameObject;
+                    }
+                }
+
+                return ProteinController;
+            }
+            public static ProteinManager getProteinManager(GameObject pc)
+            {
+                return pc.GetComponent<ProteinManager>();
+            }
+            //以上为增加的代码
+
+
+
+
+
+            /// <summary>
+            /// Allow to call python API commands and record them in the history from C#
+            /// </summary>
+            public static void ExecuteCommand(string command) {
 
         //pythonConsole.ExecuteCommand(command);
     }
@@ -886,57 +916,113 @@ public class APIPython : MonoBehaviour {
         UnityMolMain.recordUndoPythonCommand("hide(\"" + type + "\")");
     }
 
-    /// <summary>
-    /// Show all loaded molecules only as the 'type' representation
-    /// type can be "cartoon", "c", "surface", "s", "hb", "line", "l", "hbond"
-    /// </summary>
-    public static void showAs(string type) {
+            /// <summary>
+            /// Show all loaded molecules only as the 'type' representation
+            /// type can be "cartoon", "c", "surface", "s", "hb", "line", "l", "hbond"
+            /// </summary>
+            public static void showAs(string type)
+            {
 
-        UnityMolRepresentationManager repManager = UnityMolMain.getRepresentationManager();
-        UnityMolStructureManager sm = UnityMolMain.getStructureManager();
 
-        if (sm.loadedStructures.Count == 0) {
-            Debug.LogWarning("No molecule loaded");
-            return;
-        }
 
-        RepType repType = getRepType(type);
-        if (repType.atomType != AtomType.noatom || repType.bondType != BondType.nobond) {
-            //First hide all representations
-            foreach (UnityMolStructure s in sm.loadedStructures) {
-                foreach (UnityMolRepresentation r in s.representations) {
-                    r.Hide();
+                //以下为增加的引用代码
+                GameObject pc = getProteinController();
+                ProteinManager pm = getProteinManager(pc);
+                //以上为增加的引用代码
+
+
+
+                UnityMolRepresentationManager repManager = UnityMolMain.getRepresentationManager();
+                UnityMolStructureManager sm = UnityMolMain.getStructureManager();
+
+
+
+                if (sm.loadedStructures.Count == 0)
+                {
+                    Debug.LogWarning("No molecule loaded");
+                    return;
                 }
-            }
+
+                RepType repType = getRepType(type);
+                if (repType.atomType != AtomType.noatom || repType.bondType != BondType.nobond)
+                {
+                    //First hide all representations
+                    foreach (UnityMolStructure s in sm.loadedStructures)
+                    {
 
 
-            foreach (UnityMolStructure s in sm.loadedStructures) {
-                List<UnityMolRepresentation> existingReps = repManager.representationExists(s.ToSelectionName(), repType);
 
-                if (existingReps == null) {
-                    repManager.AddRepresentation(s, repType.atomType, repType.bondType);
-                }
-                else {
-                    foreach (UnityMolRepresentation existingRep in existingReps) {
-                        existingRep.Show();
+                        //增加的判定语句代码
+                        string SelName = pm.Set_selName(s.name);
+                        GameObject protein = pm.FindChildObject(SelName);
+
+                        if (protein.activeInHierarchy)
+                        {
+                            //插入的原本的代码
+                            foreach (UnityMolRepresentation r in s.representations)
+                            {
+                                r.Hide();
+                            }
+                            //原本代码插入
+                        }
+                        //增加的判定代码
+
+
+
+                    }
+
+
+                    foreach (UnityMolStructure s in sm.loadedStructures)
+                    {
+
+
+
+                        //增加的判定语句代码
+                        string SelName = pm.Set_selName(s.name);
+                        GameObject protein = pm.FindChildObject(SelName);
+
+                        if (protein.activeInHierarchy)
+                        {
+                            //插入的原本的代码
+                            List<UnityMolRepresentation> existingReps = repManager.representationExists(s.ToSelectionName(), repType);
+
+                            if (existingReps == null)
+                            {
+                                repManager.AddRepresentation(s, repType.atomType, repType.bondType);
+                            }
+                            else
+                            {
+                                foreach (UnityMolRepresentation existingRep in existingReps)
+                                {
+                                    existingRep.Show();
+                                }
+                            }
+                            //原本代码插入
+                        }
+                        //增加用来判定的代码
+
+
+
                     }
                 }
+                else
+                {
+                    Debug.LogError("Wrong representation type");
+                    return;
+                }
+
+                UnityMolMain.recordPythonCommand("show(\"" + type + "\")");
+                UnityMolMain.recordUndoPythonCommand("hide(\"" + type + "\")");
             }
-        }
-        else {
-            Debug.LogError("Wrong representation type");
-            return;
-        }
 
-        UnityMolMain.recordPythonCommand("show(\"" + type + "\")");
-        UnityMolMain.recordUndoPythonCommand("hide(\"" + type + "\")");
-    }
 
-    /// <summary>
-    /// Create selections and default representations: all in cartoon, not protein in hyperballs
-    /// Also create a selection containing "not protein and not water and not ligand and not ions"
-    /// </summary>
-    public static bool defaultRep(string selName) {
+
+
+            /// <summary>
+            /// Create selections and default representations: all in cartoon, not protein in hyperballs
+            /// Also create a selection containing "not protein and not water and not ligand and not ions"
+            /// </summary>
+            public static bool defaultRep(string selName) {
         UnityMolSelectionManager selM = UnityMolMain.getSelectionManager();
         UnityMolRepresentationManager repManager = UnityMolMain.getRepresentationManager();
 

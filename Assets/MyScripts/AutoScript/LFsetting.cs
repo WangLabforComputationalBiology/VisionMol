@@ -29,7 +29,7 @@ public class LFsetting : MonoBehaviour
 
             // 设置Canvas的大小为0.01
             canvasRect.localScale = Vector3.one * 0.006f;
-            canvasRect.AddComponent<TrackedDeviceGraphicRaycaster>();
+            canvasRect.AddComponent<TrackedDeviceGraphicRaycaster>();  
         }
         else
         {

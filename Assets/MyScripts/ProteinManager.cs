@@ -12,8 +12,8 @@ public class ProteinManager : MonoBehaviour
     //创建MyloadedStructures数组和需要的参数
     public int MaxCurrent = 3;
     public int MyCurrent = 0;
-    public int _myCurrent = 1;
-    public string[] MyloadedStructures = new string[3] { "Protein_1","Protein_2","Protein_3"};
+    public int _myCurrent = -1;
+    public string[] MyloadedStructures = new string[3] { "Protein_1", "Protein_2", "Protein_3" };
 
     //创建数组指向蛋白质切换按钮
     public Toggle[] SwitchProtein = new Toggle[3];
@@ -35,15 +35,15 @@ public class ProteinManager : MonoBehaviour
     private void Update()
     {
         UnityMolStructureManager sm = UnityMolMain.getStructureManager();
-        UnityMolStructure s = sm.GetCurrentStructure();
 
-        //监听是否有添加蛋白质
         MyCurrent = sm.loadedStructures.Count - 1;
 
         if (MyCurrent != _myCurrent)
         {
+            //监听是否有添加蛋白质
             _myCurrent = MyCurrent;
             //保存蛋白质的名称到数组中
+            UnityMolStructure s = sm.GetCurrentStructure();
             MyloadedStructures[MyCurrent] = s.name;
 
             //切换文本名称到toggle按钮
@@ -64,7 +64,21 @@ public class ProteinManager : MonoBehaviour
         }
     }
 
-    /*
+
+    public void test()
+    {
+        UnityMolStructureManager sm = UnityMolMain.getStructureManager();
+        UnityMolStructure s = sm.GetCurrentStructure();
+
+        Debug.Log(sm.loadedStructures.Count);
+        if (sm.loadedStructures.Count == -1)
+        {
+            Debug.Log(-1);
+        }
+    }
+
+
+    /*利用load按钮进行保存
     //把蛋白质名称同步存入自建的MyloadedStructures，并把文本切换为蛋白质名称
     public void SaveProtein()
     {

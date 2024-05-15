@@ -55,7 +55,7 @@ using System.Collections.Generic;
 public class SwitchOnOff : MonoBehaviour
 {
 
-    public void switchOnOff()
+    public void Switchonff()
     {
         gameObject.SetActive(!gameObject.activeInHierarchy);
     }
@@ -64,6 +64,13 @@ public class SwitchOnOff : MonoBehaviour
         if (!gameObject.activeSelf)
         {
             gameObject.SetActive(true);
+        }
+    }
+    public void Switchoff()
+    {
+        if (gameObject.activeSelf)
+        {
+            gameObject.SetActive(false);
         }
     }
 

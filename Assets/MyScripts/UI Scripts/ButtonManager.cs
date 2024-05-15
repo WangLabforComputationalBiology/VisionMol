@@ -23,21 +23,21 @@ public class ButtonManager : MonoBehaviour
     }
 
     // 调用此方法来显示所有按钮
-    public void ShowAllButtons()
-    {
-        foreach (var button in buttons)
-        {
-            button.SetActive(true); // 显示所有按钮
-        }
-        activeButton = null; // 重置当前激活的按钮
-    }
+    //public void ShowAllButtons()
+    //{
+    //    foreach (var button in buttons)
+    //    {
+    //        button.SetActive(true); // 显示所有按钮
+    //    }
+    //    activeButton = null; // 重置当前激活的按钮
+    //}
 
     // 更新方法，允许在游戏运行时通过按键来重新激活所有按钮
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R)) // 如果按下R键
-        {
-            ShowAllButtons(); // 重置并显示所有按钮
-        }
-    }
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.R)) // 如果按下R键
+    //    {
+    //        ShowAllButtons(); // 重置并显示所有按钮
+    //    }
+    //}
 }

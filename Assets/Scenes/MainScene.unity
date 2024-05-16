@@ -12761,7 +12761,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 8270855663187062767, guid: 1392f805216c47742996d4742c80721c, type: 3}
+  m_ModelPrefab: {fileID: -8679921383154817045, guid: baec9d40c0abc1a4eb2873341af9b8d1, type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -21705,7 +21705,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 3475118261464492563, guid: 9f3369e30fbd31f4bb596b1a99babe83, type: 3}
+  m_ModelPrefab: {fileID: -8679921383154817045, guid: fdb79832f40a85e46a8a2ecc962d065e, type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -25574,11 +25574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8a4baed702d9a41a1e7265054db090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: {fileID: 1801251979655968282}
-  labelColor: {fileID: 2407567031871066435}
-  labelSize: {fileID: 6917667149077566212}
-  all: {fileID: 8916966548325560518}
-  backButton: {fileID: 0}
 --- !u!1 &946093125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2357183687180980975, guid: 4986077259506ff4ebdec278afd2840f, type: 3}

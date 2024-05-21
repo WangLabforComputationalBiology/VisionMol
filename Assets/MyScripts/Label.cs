@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 
 public class Label : MonoBehaviour
 {
-    public TMP_Dropdown loadedLabelTMP_Dropdown;
+    public Dropdown loadedLabelTMP_Dropdown;
     public Slider sizeSlider;
     private List<Transform> parentTs;
     private List<TextMeshPro> textList;
@@ -395,7 +395,7 @@ public class Label : MonoBehaviour
     {
         if (!loadedLabelTMP_Dropdown.options.Any(option => option.text == str))
         {
-            loadedLabelTMP_Dropdown.options.Add(new TMP_Dropdown.OptionData() { text = str });
+            loadedLabelTMP_Dropdown.options.Add(new Dropdown.OptionData() { text = str });
         }
     }
 }

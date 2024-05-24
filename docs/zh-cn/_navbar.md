@@ -1,4 +1,0 @@
-- [介绍](/zh-cn/README.md)
-- Language
-    - [**简体中文**](/zh-cn/)
-    - [English](/en-us/)

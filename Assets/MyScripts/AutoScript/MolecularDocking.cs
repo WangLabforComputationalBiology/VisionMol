@@ -2,16 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UMol;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class MolecularDocking : MonoBehaviour
 {
-    // Start is called before the first frame update
-    //void Start()
-    //{
-        
-    //}
+    public Slider radiusSlider; // Slider 组件的引用
+    public GameObject Sphere; // Sphere 游戏对象的引用
     public void GetCartoon()
     {
         UnityMolStructureManager sm = UnityMolMain.getStructureManager();
@@ -37,6 +34,9 @@ public class MolecularDocking : MonoBehaviour
                 GameObject modelObject = childTransform.gameObject;
                 SphereCollider sphereCollider = modelObject.AddComponent<SphereCollider>();
                 sphereCollider.radius = 10f;
+                //sphereCollider.radius = radiusSlider.value;
+                //Sphere.transform.position = sphereCollider.center;
+                //Sphere.transform.localScale = new Vector3(radiusSlider.value, radiusSlider.value, radiusSlider.value);
                 XRGrabInteractable grabInteractable=modelObject.AddComponent<XRGrabInteractable>();
                 grabInteractable.movementType = XRBaseInteractable.MovementType.VelocityTracking;
                 Rigidbody rigidbody= modelObject.GetComponent<Rigidbody>();
@@ -70,12 +70,16 @@ public class MolecularDocking : MonoBehaviour
         Transform parentTransform = selTransform?.Find("BondLineRepresentation");
         if (parentTransform != null)
         {
+          
             foreach (Transform childTransform in parentTransform)
             {
                 string childName = childTransform.name;
                 GameObject modelObject = childTransform.gameObject;
                 SphereCollider sphereCollider = modelObject.AddComponent<SphereCollider>();
-                sphereCollider.radius = 10f;
+                sphereCollider.radius =10f;
+                //sphereCollider.radius = radiusSlider.value;
+                //Sphere.transform.position = sphereCollider.center;
+                //Sphere.transform.localScale = new Vector3(radiusSlider.value, radiusSlider.value, radiusSlider.value);
                 XRGrabInteractable grabInteractable = modelObject.AddComponent<XRGrabInteractable>();
                 grabInteractable.movementType = XRBaseInteractable.MovementType.VelocityTracking;
                 Rigidbody rigidbody = modelObject.GetComponent<Rigidbody>();
@@ -90,9 +94,4 @@ public class MolecularDocking : MonoBehaviour
             Debug.LogWarning("Cannot find parent game object: AtomCartoonRepresentation");
         }
     }
-    // Update is called once per frame
-    //void Update()
-    //{
-
-    //}
 }

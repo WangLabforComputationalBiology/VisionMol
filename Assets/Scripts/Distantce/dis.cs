@@ -30,6 +30,7 @@ namespace UMol
 
         public GameObject leftController;
         public GameObject rightController;
+        public Button clear;
 
         void Start()
         {
@@ -211,7 +212,7 @@ namespace UMol
             ClearHighlightsAndLines();
         }
 
-        void ClearHighlightsAndLines()
+        public void ClearHighlightsAndLines()
         {
             foreach (GameObject haloGo in haloObjects)
             {

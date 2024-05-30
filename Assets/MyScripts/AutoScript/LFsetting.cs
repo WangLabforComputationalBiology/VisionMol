@@ -17,17 +17,17 @@ public class LFsetting : MonoBehaviour
 
         if (canvasGameObject != null)
         {
-            // 获取Canvas和RectTransform组件
+            // 鑾峰彇Canvas鍜孯ectTransform缁勪欢
             canvas = canvasGameObject.GetComponent<Canvas>();
             canvasRect = canvasGameObject.GetComponent<RectTransform>();
 
-            // 设置Canvas的RenderMode为WorldSpace
+            // 璁剧疆Canvas鐨凴enderMode涓篧orldSpace
             canvas.renderMode = RenderMode.WorldSpace;
             canvas.sortingOrder = 1;
-            // 设置Canvas的坐标为原点
+            // 璁剧疆Canvas鐨勫潗鏍囦负鍘熺偣
             canvasRect.anchoredPosition3D = new Vector3(0.02f, 0.76f, 2.93f);
 
-            // 设置Canvas的大小为0.01
+            // 璁剧疆Canvas鐨勫ぇ灏忎负0.01
             canvasRect.localScale = Vector3.one * 0.006f;
             canvasRect.AddComponent<TrackedDeviceGraphicRaycaster>();  
         }

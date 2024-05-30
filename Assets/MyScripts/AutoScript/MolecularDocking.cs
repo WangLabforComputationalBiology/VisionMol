@@ -7,8 +7,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class MolecularDocking : MonoBehaviour
 {
-    public Slider radiusSlider; // Slider ×é¼şµÄÒıÓÃ
-    public GameObject Sphere; // Sphere ÓÎÏ·¶ÔÏóµÄÒıÓÃ
+    public Slider radiusSlider; // Slider ç»„ä»¶çš„å¼•ç”¨
+    public GameObject Sphere; // Sphere æ¸¸æˆå¯¹è±¡çš„å¼•ç”¨
     public void GetCartoon()
     {
         UnityMolStructureManager sm = UnityMolMain.getStructureManager();

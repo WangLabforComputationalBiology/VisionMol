@@ -137,10 +137,10 @@ public class UIManager : MonoBehaviour {
 
 		rightCam = GameObject.Find("Cyclop/CameraUMolXR");
 
-		if (GameObject.Find(mainUIName) == null) {
-			GameObject newPanel = Instantiate((GameObject) Resources.Load("Prefabs/CanvasMainUI"));
-			newPanel.transform.name = mainUIName;
-		}
+		//if (GameObject.Find(mainUIName) == null) {
+		//	GameObject newPanel = Instantiate((GameObject) Resources.Load("Prefabs/CanvasMainUI"));
+		//	newPanel.transform.name = mainUIName;
+		//}
 
 		if (loadedMolUITransform == null) {
 			loadedMolUITransform = GameObject.Find(mainUIName + "/Selection Scroll View/Viewport/Content/LoadedMoleculesUI").transform;

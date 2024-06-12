@@ -22,7 +22,7 @@ float4x4 mat_inverse(float4x4 A)
 {
     float4x4 inv;
     float det = determinant(A);
-    float invdet = 1 / det;
+    float invdet = 1 / (det+1);
 
     inv[0][0] = invdet * (A[1][1] * A[2][2] * A[3][3] + A[1][2] * A[2][3] * A[3][1] + A[1][3] * A[2][1] * A[3][2] - 
                           A[1][1] * A[2][3] * A[3][2] - A[1][2] * A[2][1] * A[3][3] - A[1][3] * A[2][2] * A[3][1]); 

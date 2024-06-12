@@ -81,7 +81,8 @@ public class CollisionSize : MonoBehaviour
     private void Update()
     {
         GameObject sizesa = GameObject.Find("LoadedMolecules");
-        sizesa.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+        sizesa.transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
+        Debug.Log("1111");
     }
 
 }

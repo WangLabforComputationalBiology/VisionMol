@@ -104,12 +104,12 @@ public class UnityMolMain {
 	//}
 
 	public static GameObject getRepresentationParent() {
-		if (loadedMolGO == null) {
-			loadedMolGO = GameObject.Find("LoadedMolecules");
-		}
-		if (loadedMolGO == null) {
-			loadedMolGO = new GameObject("LoadedMolecules");
-		}
+		
+		loadedMolGO = GameObject.Find("LoadedMolecules").gameObject;
+		
+		//if (loadedMolGO == null) {
+		//	loadedMolGO = new GameObject("LoadedMolecules");
+		//}
 		return loadedMolGO;
 	}
 

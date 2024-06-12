@@ -218,7 +218,7 @@ Shader "UMol/Ball HyperBalls Shadow Merged" {
 				float4 M1 = float4(M,1.0);
 				float4 M2 = mul(mat,M1);
 
-				float3 normal = normalize(mul(ModelViewIT,M2).xyz);
+				float3 normal = Unity_SafeNormalize(mul(ModelViewIT,M2).xyz);
 
 				//LitSPhere / MatCap
 				half2 vn = normal.xy;
@@ -226,7 +226,7 @@ Shader "UMol/Ball HyperBalls Shadow Merged" {
 			    float4 matcapLookup = tex2D(_MatCap, vn*0.5 + 0.5);    
 
 
-                float3 L = normalize( mul(UNITY_MATRIX_V,float4(normalize(_WorldSpaceLightPos0.xyz),0)));
+                float3 L = Unity_SafeNormalize( mul(UNITY_MATRIX_V,float4(Unity_SafeNormalize(_WorldSpaceLightPos0.xyz),0)));
                 float NdotL = saturate(dot(normal,L));
                 
                 float4 diffuseTerm = NdotL*_LightColor0;    

@@ -93,7 +93,7 @@ Shader "UMol/Sticks HyperBalls Merged"
                 float4x4 ModelViewProjI = mat_inverse(UNITY_MATRIX_MVP);
 
                 vertexOutput o; // Shader output
-
+                UNITY_INITIALIZE_OUTPUT(vertexOutput, o);
                 float4 vertexPosition;
                 float NBParamm1 = _NBParam - 1;
                 float vertexid = v.uv_vetexids[0];

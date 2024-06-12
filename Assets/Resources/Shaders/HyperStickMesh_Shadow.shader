@@ -7,7 +7,7 @@ Shader "UMol/Sticks HyperBalls Shadow Merged"
         _Shrink         ("Shrink Factor", float) = 0.1
         _Scale          ("Link Scale", float) = 1.0
         _EllipseFactor  ("Ellipse Factor", float) = 1.0
-        _Brightness     ("Brightness", float) = 1.0
+        _Brightness     ("Brightness", float) = 5.0
         _NBParam        ("Texture size in x", Float) = 14.0
         _NBSticks       ("Texture size in y", Float) = 100.0
         _Shininess      ("Shininess", float) = 0.0
@@ -105,7 +105,7 @@ Shader "UMol/Sticks HyperBalls Shadow Merged"
                 float4x4 ModelViewProjI = mat_inverse(UNITY_MATRIX_MVP);
 
                 vertexOutput o; // Shader output
-
+                UNITY_INITIALIZE_OUTPUT(vertexOutput, o);
                 float4 vertexPosition;
                 float NBParamm1 = _NBParam - 1;
                 float vertexid = v.uv_vetexids[0];
@@ -301,7 +301,7 @@ Shader "UMol/Sticks HyperBalls Shadow Merged"
 
                 //------------ blinn phong light try ------------------------
 
-                float3 normal = normalize(mul(ModelViewIT, mul(mat, M1)).xyz);
+                float3 normal = Unity_SafeNormalize(mul(ModelViewIT, mul(mat, M1)).xyz);
 
 
                 float a = sum((M.xyz - cutoff2)  *  e3) / distance(cutoff2, cutoff1);
@@ -327,7 +327,7 @@ Shader "UMol/Sticks HyperBalls Shadow Merged"
 
 
 
-                float3 L = normalize( mul(UNITY_MATRIX_V, float4(normalize(_WorldSpaceLightPos0.xyz), 0)));
+                float3 L = Unity_SafeNormalize( mul(UNITY_MATRIX_V, float4(Unity_SafeNormalize(_WorldSpaceLightPos0.xyz), 0)));
                 float NdotL = saturate(dot(normal, L));
                 float4 diffuseTerm = NdotL * _LightColor0;
 

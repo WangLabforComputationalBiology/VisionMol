@@ -53,7 +53,7 @@ namespace UMol
         void Update()
         {
             //if (Input.GetMouseButtonDown(0))
-            if(OVRInput.Get(OVRInput.Button.One))   //手柄A/X按下
+            if(OVRInput.GetDown(OVRInput.Button.One))   //手柄A/X按下
             {
                 //Debug.Log("1");
                 UnityMolAtom a = getAtomPointed(leftController) ?? getAtomPointed(rightController);

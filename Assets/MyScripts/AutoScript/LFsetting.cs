@@ -25,7 +25,7 @@ public class LFsetting : MonoBehaviour
             canvas.renderMode = RenderMode.WorldSpace;
             canvas.sortingOrder = 0;
             // 设置Canvas的坐标
-            canvasRect.anchoredPosition3D = new Vector3(0.02f, 1.584f, 2.438f);
+            canvasRect.anchoredPosition3D = new Vector3(0.02f, 0.584f, 2.438f);
 
             // 设置Canvas的大小为0.01
             //canvasRect.localScale = Vector3.one * 0.006f;

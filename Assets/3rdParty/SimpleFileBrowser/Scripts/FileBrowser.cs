@@ -119,7 +119,7 @@ namespace SimpleFileBrowser
 			set { m_askPermissions = value; }
 		}
 		
-		private static bool m_singleClickMode = false;
+		private static bool m_singleClickMode = true;
 		public static bool SingleClickMode
 		{
 			get { return m_singleClickMode; }

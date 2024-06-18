@@ -48,6 +48,7 @@ Library: D:\UnityProjects\VisionMol\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\UnityProjects\VisionMol\Temp\Burst
+--debug=Full
 --key-folder=D:/Unity/Hub/Editor/2022.3.17f1c1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=D:\UnityProjects\VisionMol\Library\Burst
 --output=D:\UnityProjects\VisionMol\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated

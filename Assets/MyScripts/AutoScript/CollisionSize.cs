@@ -7,15 +7,15 @@ using UnityEngine.UI;
 using System.Threading;
 public class CollisionSize : MonoBehaviour
 {   
-    public Slider radiusSlider; // Slider ×é¼şµÄÒıÓÃ
-    public GameObject Sphere; // Sphere ÓÎÏ·¶ÔÏóµÄÒıÓÃ
+    public Slider radiusSlider; // Slider ç»„ä»¶çš„å¼•ç”¨
+    public GameObject Sphere; // Sphere æ¸¸æˆå¯¹è±¡çš„å¼•ç”¨
     private void Start()
     {
          
-        radiusSlider.minValue = 1f; // ×îĞ¡°ë¾¶Îª 1
-        radiusSlider.maxValue = 10.0f; // ×î´ó°ë¾¶Îª 10
+        radiusSlider.minValue = 1f; // æœ€å°åŠå¾„ä¸º 1
+        radiusSlider.maxValue = 10.0f; // æœ€å¤§åŠå¾„ä¸º 10
         Sphere.SetActive(false);
-        // Ìí¼Ó Slider Öµ¸ü¸ÄÊÂ¼şµÄ¼àÌı
+        // æ·»åŠ  Slider å€¼æ›´æ”¹äº‹ä»¶çš„ç›‘å¬
         radiusSlider.onValueChanged.AddListener(UpdateSphereRadius);
     }
 
@@ -82,7 +82,6 @@ public class CollisionSize : MonoBehaviour
     {
         GameObject sizesa = GameObject.Find("LoadedMolecules");
         sizesa.transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
-        Debug.Log("1111");
     }
 
 }

@@ -187,27 +187,32 @@ public class ReadSaveFilesWithBrowser : MonoBehaviour
 
     void StartDialog(bool readHetm)
     {
-        using var buildCodes = new AndroidJavaClass("android.os.Build$VERSION_CODES");
+        //！！这段代码(line193-line212)在unity内调试时务必注释掉，确保打包时取消注释！！
 
-        using var buildVersion = new AndroidJavaClass("android.os.Build$VERSION");
-        //Check SDK version > 29
-        if (buildVersion.GetStatic<int>("SDK_INT") > buildCodes.GetStatic<int>("Q"))
-        {
-            using var environment = new AndroidJavaClass("android.os.Environment");
-            //сhecking if permission already exists
-            if (!environment.CallStatic<bool>("isExternalStorageManager"))
-            {
-                using var settings = new AndroidJavaClass("android.provider.Settings");
-                using var uri = new AndroidJavaClass("android.net.Uri");
-                using var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-                using var currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-                using var parsedUri = uri.CallStatic<AndroidJavaObject>("parse", $"package:{Application.identifier}");
-                using var intent = new AndroidJavaObject("android.content.Intent",
-                    settings.GetStatic<string>("ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION"),
-                    parsedUri);
-                currentActivity.Call("startActivity", intent);
-            }
-        }
+
+        //using var buildCodes = new AndroidJavaClass("android.os.Build$VERSION_CODES");
+        //using var buildVersion = new AndroidJavaClass("android.os.Build$VERSION");
+        ////Check SDK version > 29
+        //if (buildVersion.GetStatic<int>("SDK_INT") > buildCodes.GetStatic<int>("Q"))
+        //{
+        //    using var environment = new AndroidJavaClass("android.os.Environment");
+        //    //сhecking if permission already exists
+        //    if (!environment.CallStatic<bool>("isExternalStorageManager"))
+        //    {
+        //        using var settings = new AndroidJavaClass("android.provider.Settings");
+        //        using var uri = new AndroidJavaClass("android.net.Uri");
+        //        using var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        //        using var currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+        //        using var parsedUri = uri.CallStatic<AndroidJavaObject>("parse", $"package:{Application.identifier}");
+        //        using var intent = new AndroidJavaObject("android.content.Intent",
+        //            settings.GetStatic<string>("ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION"),
+        //            parsedUri);
+        //        currentActivity.Call("startActivity", intent);
+        //    }
+        //}
+
+
+
         // Set filters (optional)
         // It is sufficient to set the filters just once (instead of each time before showing the file browser dialog),
         // if all the dialogs will be using the same filters

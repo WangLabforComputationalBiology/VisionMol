@@ -189,27 +189,26 @@ public class ReadSaveFilesWithBrowser : MonoBehaviour
     {
         //！！这段代码(line193-line212)在unity内调试时务必注释掉，确保打包时取消注释！！
 
-
-        //using var buildCodes = new AndroidJavaClass("android.os.Build$VERSION_CODES");
-        //using var buildVersion = new AndroidJavaClass("android.os.Build$VERSION");
-        ////Check SDK version > 29
-        //if (buildVersion.GetStatic<int>("SDK_INT") > buildCodes.GetStatic<int>("Q"))
-        //{
-        //    using var environment = new AndroidJavaClass("android.os.Environment");
-        //    //сhecking if permission already exists
-        //    if (!environment.CallStatic<bool>("isExternalStorageManager"))
-        //    {
-        //        using var settings = new AndroidJavaClass("android.provider.Settings");
-        //        using var uri = new AndroidJavaClass("android.net.Uri");
-        //        using var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        //        using var currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-        //        using var parsedUri = uri.CallStatic<AndroidJavaObject>("parse", $"package:{Application.identifier}");
-        //        using var intent = new AndroidJavaObject("android.content.Intent",
-        //            settings.GetStatic<string>("ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION"),
-        //            parsedUri);
-        //        currentActivity.Call("startActivity", intent);
-        //    }
-        //}
+        using var buildCodes = new AndroidJavaClass("android.os.Build$VERSION_CODES");
+        using var buildVersion = new AndroidJavaClass("android.os.Build$VERSION");
+        //Check SDK version > 29
+        if (buildVersion.GetStatic<int>("SDK_INT") > buildCodes.GetStatic<int>("Q"))
+        {
+            using var environment = new AndroidJavaClass("android.os.Environment");
+            //сhecking if permission already exists
+            if (!environment.CallStatic<bool>("isExternalStorageManager"))
+            {
+                using var settings = new AndroidJavaClass("android.provider.Settings");
+                using var uri = new AndroidJavaClass("android.net.Uri");
+                using var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+                using var currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+                using var parsedUri = uri.CallStatic<AndroidJavaObject>("parse", $"package:{Application.identifier}");
+                using var intent = new AndroidJavaObject("android.content.Intent",
+                    settings.GetStatic<string>("ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION"),
+                    parsedUri);
+                currentActivity.Call("startActivity", intent);
+            }
+        }
 
 
 

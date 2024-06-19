@@ -189,6 +189,8 @@ public class ReadSaveFilesWithBrowser : MonoBehaviour
     {
             //！！这段代码(line193-line212)在unity内调试时务必注释掉，确保打包时取消注释！！
             //!! This code (line193 line212) must be commented out when debugging in Unity, make sure to uncomment it during packaging!!
+
+        #if !UNITY_EDITOR
             using var buildCodes = new AndroidJavaClass("android.os.Build$VERSION_CODES");
             using var buildVersion = new AndroidJavaClass("android.os.Build$VERSION");
             //Check SDK version > 29
@@ -209,13 +211,15 @@ public class ReadSaveFilesWithBrowser : MonoBehaviour
                     currentActivity.Call("startActivity", intent);
                 }
             }
+        #endif
 
 
 
-            // Set filters (optional)
-            // It is sufficient to set the filters just once (instead of each time before showing the file browser dialog),
-            // if all the dialogs will be using the same filters
-            FileBrowser.SetFilters( true, new FileBrowser.Filter( "Supported", ".pdb", ".cif", ".mmcif", ".gro", ".mol2", ".xyz", ".sdf", ".mol", ".py", ".dx", ".xtc", ".itp"));
+
+        // Set filters (optional)
+        // It is sufficient to set the filters just once (instead of each time before showing the file browser dialog),
+        // if all the dialogs will be using the same filters
+        FileBrowser.SetFilters( true, new FileBrowser.Filter( "Supported", ".pdb", ".cif", ".mmcif", ".gro", ".mol2", ".xyz", ".sdf", ".mol", ".py", ".dx", ".xtc", ".itp"));
 
         // Set default filter that is selected when the dialog is shown (optional)
         // Returns true if the default filter is set successfully

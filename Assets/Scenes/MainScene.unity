@@ -6915,7 +6915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735a7c45f36ada949ba659536107f1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadedLabelTMP_Dropdown: {fileID: 0}
+  loadedLabelTMP_Dropdown: {fileID: 6415793593524242956}
   sizeSlider: {fileID: 3256902502971985237}
 --- !u!114 &187854939
 MonoBehaviour:
@@ -74622,7 +74622,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1543543091682529596}
   - component: {fileID: 3395333784619841646}
-  - component: {fileID: 1837400381178555387}
   m_Layer: 5
   m_Name: LabelButtons
   m_TagString: Untagged
@@ -74698,20 +74697,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1837400381178555387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801251979655968282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 735a7c45f36ada949ba659536107f1c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadedLabelTMP_Dropdown: {fileID: 0}
-  sizeSlider: {fileID: 6193683354038796770, guid: e15e8b795f545eb4b93692cab0c0adff, type: 3}
 --- !u!224 &1850056607587709227
 RectTransform:
   m_ObjectHideFlags: 0

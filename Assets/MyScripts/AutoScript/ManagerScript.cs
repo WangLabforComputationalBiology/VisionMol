@@ -240,37 +240,37 @@ public class ManagerScript : MonoBehaviour
 
     }
 
-    public void Linecolor()
-    {
-        //以下为增加的引用代码
-        GameObject pc = getProteinController();
-        ProteinManager pm = getProteinManager(pc);
-        //以上为增加的引用代码
+    //public void Linecolor()
+    //{
+    //    //以下为增加的引用代码
+    //    GameObject pc = getProteinController();
+    //    ProteinManager pm = getProteinManager(pc);
+    //    //以上为增加的引用代码
 
-        UnityMolStructureManager sm = UnityMolMain.getStructureManager();
-        ColorPickerControl lineColorPicker = GameObject.Find("RepOptions/RowLine/ColorPicker").gameObject.GetComponent<ColorPickerControl>();
+    //    UnityMolStructureManager sm = UnityMolMain.getStructureManager();
+    //    ColorPickerControl lineColorPicker = GameObject.Find("RepOptions/RowLine/ColorPicker").gameObject.GetComponent<ColorPickerControl>();
 
-        foreach (UnityMolStructure s in sm.loadedStructures)
-        {
-            string selName = pm.Set_selName(s.name);
-            GameObject protein = pm.FindChildObject(selName);
+    //    foreach (UnityMolStructure s in sm.loadedStructures)
+    //    {
+    //        string selName = pm.Set_selName(s.name);
+    //        GameObject protein = pm.FindChildObject(selName);
 
-            if (protein.activeInHierarchy)
-            {
-                lineColorPicker.onValueChanged.AddListener(
-                delegate
-                {
-                    // 在回调函数中增加对 protein 对象当前状态的检查
-                    if (protein.activeInHierarchy)
-                    {
-                        APIPython.colorSelection(selName, "l", lineColorPicker.CurrentColor);
-                    }
-                });
-            }
-        }
-    }
+    //        if (protein.activeInHierarchy)
+    //        {
+    //            lineColorPicker.onValueChanged.AddListener(
+    //            delegate
+    //            {
+    //                // 在回调函数中增加对 protein 对象当前状态的检查
+    //                if (protein.activeInHierarchy)
+    //                {
+    //                    APIPython.colorSelection(selName, "l", lineColorPicker.CurrentColor);
+    //                }
+    //            });
+    //        }
+    //    }
+    //}
 
-    /*
+    
     public void Linecolor()
     {
         UnityMolStructureManager sm = UnityMolMain.getStructureManager();
@@ -299,38 +299,38 @@ public class ManagerScript : MonoBehaviour
             });
         }
     }
-     */
-    public void Surfacecolor()
-    {
-        //以下为增加的引用代码
-        GameObject pc = getProteinController();
-        ProteinManager pm = getProteinManager(pc);
-        //以上为增加的引用代码
+     
+    //public void Surfacecolor()
+    //{
+    //    //以下为增加的引用代码
+    //    GameObject pc = getProteinController();
+    //    ProteinManager pm = getProteinManager(pc);
+    //    //以上为增加的引用代码
 
-        UnityMolStructureManager sm = UnityMolMain.getStructureManager();
-        ColorPickerControl surColorPicker = GameObject.Find("RepOptions/RowS/ColorPicker").gameObject.GetComponent<ColorPickerControl>();
+    //    UnityMolStructureManager sm = UnityMolMain.getStructureManager();
+    //    ColorPickerControl surColorPicker = GameObject.Find("RepOptions/RowS/ColorPicker").gameObject.GetComponent<ColorPickerControl>();
 
-        foreach (UnityMolStructure s in sm.loadedStructures)
-        {
-            string selName = pm.Set_selName(s.name);
-            GameObject protein = pm.FindChildObject(selName);
+    //    foreach (UnityMolStructure s in sm.loadedStructures)
+    //    {
+    //        string selName = pm.Set_selName(s.name);
+    //        GameObject protein = pm.FindChildObject(selName);
 
-            if (protein.activeInHierarchy)
-            {
-                surColorPicker.onValueChanged.AddListener(
-                delegate
-                {
-                    // 在回调函数中增加对 protein 对象当前状态的检查
-                    if (protein.activeInHierarchy)
-                    {
-                        APIPython.colorSelection(selName, "s", surColorPicker.CurrentColor);
-                    }
-                });
-            }
-        }
-    }
+    //        if (protein.activeInHierarchy)
+    //        {
+    //            surColorPicker.onValueChanged.AddListener(
+    //            delegate
+    //            {
+    //                // 在回调函数中增加对 protein 对象当前状态的检查
+    //                if (protein.activeInHierarchy)
+    //                {
+    //                    APIPython.colorSelection(selName, "s", surColorPicker.CurrentColor);
+    //                }
+    //            });
+    //        }
+    //    }
+    //}
 
-    /*
+    
     public void Surfacecolor()
     {
         UnityMolStructureManager sm = UnityMolMain.getStructureManager();
@@ -360,40 +360,40 @@ public class ManagerScript : MonoBehaviour
             });
         }
     }
-     */
+     
 
-    public void Cartooncolor()
-    {
-        //以下为增加的引用代码
-        GameObject pc = getProteinController();
-        ProteinManager pm = getProteinManager(pc);
-        //以上为增加的引用代码
+    //public void Cartooncolor()
+    //{
+    //    //以下为增加的引用代码
+    //    GameObject pc = getProteinController();
+    //    ProteinManager pm = getProteinManager(pc);
+    //    //以上为增加的引用代码
 
-        UnityMolStructureManager sm = UnityMolMain.getStructureManager();
-        ColorPickerControl CColorPicker = GameObject.Find("RepOptions/RowC/ColorPicker").gameObject.GetComponent<ColorPickerControl>();
+    //    UnityMolStructureManager sm = UnityMolMain.getStructureManager();
+    //    ColorPickerControl CColorPicker = GameObject.Find("RepOptions/RowC/ColorPicker").gameObject.GetComponent<ColorPickerControl>();
 
-        foreach (UnityMolStructure s in sm.loadedStructures)
-        {
-            string selName = pm.Set_selName(s.name);
-            GameObject protein = pm.FindChildObject(selName);
+    //    foreach (UnityMolStructure s in sm.loadedStructures)
+    //    {
+    //        string selName = pm.Set_selName(s.name);
+    //        GameObject protein = pm.FindChildObject(selName);
 
-            if (protein.activeInHierarchy)
-            {
-                CColorPicker.onValueChanged.AddListener(
-                delegate
-                {
-                    // 在回调函数中增加对 protein 对象当前状态的检查
-                    if (protein.activeInHierarchy)
-                    {
-                        APIPython.colorSelection(selName, "c", CColorPicker.CurrentColor);
-                    }
-                });
-            }
-        }
-    }
+    //        if (protein.activeInHierarchy)
+    //        {
+    //            CColorPicker.onValueChanged.AddListener(
+    //            delegate
+    //            {
+    //                // 在回调函数中增加对 protein 对象当前状态的检查
+    //                if (protein.activeInHierarchy)
+    //                {
+    //                    APIPython.colorSelection(selName, "c", CColorPicker.CurrentColor);
+    //                }
+    //            });
+    //        }
+    //    }
+    //}
 
 
-    /*
+    
     public void Cartooncolor()
     {
         UnityMolStructureManager sm = UnityMolMain.getStructureManager();
@@ -423,41 +423,41 @@ public class ManagerScript : MonoBehaviour
             });
         }
     }
-     */
+     
 
 
-    public void HBcolor()
-    {
-        //以下为增加的引用代码
-        GameObject pc = getProteinController();
-        ProteinManager pm = getProteinManager(pc);
-        //以上为增加的引用代码
+    //public void HBcolor()
+    //{
+    //    //以下为增加的引用代码
+    //    GameObject pc = getProteinController();
+    //    ProteinManager pm = getProteinManager(pc);
+    //    //以上为增加的引用代码
 
-        UnityMolStructureManager sm = UnityMolMain.getStructureManager();
-        ColorPickerControl HBColorPicker = GameObject.Find("RepOptions/RowHB/ColorPicker").gameObject.GetComponent<ColorPickerControl>();
+    //    UnityMolStructureManager sm = UnityMolMain.getStructureManager();
+    //    ColorPickerControl HBColorPicker = GameObject.Find("RepOptions/RowHB/ColorPicker").gameObject.GetComponent<ColorPickerControl>();
 
-        foreach (UnityMolStructure s in sm.loadedStructures)
-        {
-            string selName = pm.Set_selName(s.name);
-            GameObject protein = pm.FindChildObject(selName);
+    //    foreach (UnityMolStructure s in sm.loadedStructures)
+    //    {
+    //        string selName = pm.Set_selName(s.name);
+    //        GameObject protein = pm.FindChildObject(selName);
 
-            if (protein.activeInHierarchy)
-            {
-                HBColorPicker.onValueChanged.AddListener(
-                delegate
-                {
-                    // 在回调函数中增加对 protein 对象当前状态的检查
-                    if (protein.activeInHierarchy)
-                    {
-                        APIPython.colorSelection(selName, "hb", HBColorPicker.CurrentColor);
-                    }
-                });
-            }
-        }
-    }
+    //        if (protein.activeInHierarchy)
+    //        {
+    //            HBColorPicker.onValueChanged.AddListener(
+    //            delegate
+    //            {
+    //                // 在回调函数中增加对 protein 对象当前状态的检查
+    //                if (protein.activeInHierarchy)
+    //                {
+    //                    APIPython.colorSelection(selName, "hb", HBColorPicker.CurrentColor);
+    //                }
+    //            });
+    //        }
+    //    }
+    //}
 
 
-    /*
+    
     public void HBcolor()
     {
         UnityMolStructureManager sm = UnityMolMain.getStructureManager();
@@ -487,7 +487,7 @@ public class ManagerScript : MonoBehaviour
             });
         }
     }
-     */
+     
 }
 
 

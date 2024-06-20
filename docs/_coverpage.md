@@ -1,8 +1,6 @@
-<!-- _coverpage.md -->
+# VisionMol Usage Guide
 
-# VisionMol使用指南 
-
-> 💪VisionMol使用指南。
+> 💪VisionMol Usage Guide
 
 
-[开始使用 Let Go](/README.md)
+[Let Go](/en-us/README.md)

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Docsify-Guide</title>
+    <title>VisionMol-Guide</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport"
@@ -41,13 +41,21 @@
                 maxAge: 86400000,// 过期时间，单位毫秒，默认一天
                 paths: 'auto',// 注意：仅适用于 paths: 'auto' 模式
                 placeholder: '搜索',              
-                // 支持本地化
+                // 支持本地化               
+                // 支持本地化，搜索框提示文字
                 placeholder: {
-                    '/zh-cn/': '搜索',
-                    '/': 'Type to search'
+                '/': '🔍 Search',
+                'zh-cn/': '🔍 搜索',
+                'en-us/': '🔍 Type to search'
                 },
-                noData: '找不到结果',
-                depth: 4,
+                // 支持本地化，无结果提示文字
+                noData: {
+                '/': 'No Results',
+                'zh-cn/': '找不到结果',
+                'en-us/': 'No Results'
+                },
+                // 搜索标题的最大程级, 1 - 6
+                depth: 6,                
                 hideOtherSidebarContent: false,
                 namespace: 'Docsify-Guide',
             }

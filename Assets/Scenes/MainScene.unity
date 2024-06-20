@@ -15382,7 +15382,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &426514627
 Canvas:
   m_ObjectHideFlags: 0
@@ -25500,7 +25500,7 @@ Transform:
   m_GameObject: {fileID: 723911508}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.5, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: -4, y: 0, z: 0}
+  m_LocalPosition: {x: -3.94, y: 0, z: 0.104}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64418,8 +64418,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5a82e51e8b3a844b97e67b13cb9864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radiusSlider: {fileID: 0}
-  Sphere: {fileID: 0}
 --- !u!1 &1888131435
 GameObject:
   m_ObjectHideFlags: 0
@@ -71685,7 +71683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2065495965
 RectTransform:
   m_ObjectHideFlags: 0
@@ -71707,7 +71705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280, y: 230}
+  m_AnchoredPosition: {x: 225, y: 280}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065495966

@@ -32,11 +32,11 @@ VisionMol is a protein molecule visualization app specifically designed for VR. 
 ## Requirements
 
 - VisionMol is based on game engine Unity.
-- This version runs on Unity 2021.3.34f1c1 LTS, tested on Windows. The main development is done on Windows.
+- This version runs on Unity 2022.3.17f1c1 LTS, tested on Windows. The main development is done on Windows.
 - The hardware supported by visionmol includes Rhino X, Rhino X Pro,Meta Quest 3,Meta Quest Pro.
 ## How to use
 
-1. Open the project with Unity 2021.3.34f1c1.
+1. Open the project with Unity 2022.3.17f1c1.
 2. 'MainScene.unity' is the main scene file.
 3. Load the required PDB molecular file from the menu.
 4. Use VR gamepad for 3D interaction, viewing and operating molecular models.

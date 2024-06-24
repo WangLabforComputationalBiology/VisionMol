@@ -25473,7 +25473,7 @@ Transform:
   m_GameObject: {fileID: 723911508}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.5, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: -3.94, y: 0, z: 0.104}
+  m_LocalPosition: {x: -3.189, y: 0, z: 1.404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -65031,7 +65031,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 426514624}
         m_TargetAssemblyTypeName: SwitchOnOff, Assembly-CSharp
-        m_MethodName: Switchonff
+        m_MethodName: Switchoff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

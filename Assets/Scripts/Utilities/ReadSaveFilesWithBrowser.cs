@@ -187,8 +187,7 @@ public class ReadSaveFilesWithBrowser : MonoBehaviour
 
     void StartDialog(bool readHetm)
     {
-            //！！这段代码(line193-line212)在unity内调试时务必注释掉，确保打包时取消注释！！
-            //!! This code (line193 line212) must be commented out when debugging in Unity, make sure to uncomment it during packaging!!
+            
 
         #if !UNITY_EDITOR
             using var buildCodes = new AndroidJavaClass("android.os.Build$VERSION_CODES");

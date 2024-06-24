@@ -7,8 +7,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class MolecularDocking : MonoBehaviour
 {
-    public Slider radiusSlider; // Slider 组件的引用
-    public GameObject Sphere; // Sphere 游戏对象的引用
+    //public Slider radiusSlider; // Slider 组件的引用
+    //public GameObject Sphere; // Sphere 游戏对象的引用
     public void GetCartoon()
     {
         UnityMolStructureManager sm = UnityMolMain.getStructureManager();

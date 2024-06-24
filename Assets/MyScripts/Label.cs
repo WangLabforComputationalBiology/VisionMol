@@ -86,7 +86,7 @@ public class Label : MonoBehaviour
             string SelName = pm.Set_selName(s.name);
             GameObject protein = pm.FindChildObject(SelName);
 
-            if (protein.activeInHierarchy)
+            if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures, s.name)] == 1)
             {
 
 
@@ -182,7 +182,7 @@ public class Label : MonoBehaviour
             string SelName = pm.Set_selName(s.name);
             GameObject protein = pm.FindChildObject(SelName);
 
-            if (protein.activeInHierarchy)
+            if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures, s.name)] == 1)
             {
                 
                 //插入原本代码
@@ -276,7 +276,7 @@ public class Label : MonoBehaviour
             string SelName = pm.Set_selName(s.name);
             GameObject protein = pm.FindChildObject(SelName);
 
-            if (protein.activeInHierarchy)
+            if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures, s.name)] == 1)
             {
                 //插入原本代码
                 List<UnityMolModel> ms = s.models;
@@ -373,7 +373,7 @@ public class Label : MonoBehaviour
             string SelName = pm.Set_selName(s.name);
             GameObject protein = pm.FindChildObject(SelName);
 
-            if (protein.activeInHierarchy)
+            if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures, s.name)] == 1)
             {
                 //插入原本代码
                 Transform loadedMolT = GameObject.Find("LoadedMolecules").transform;
@@ -466,7 +466,7 @@ public class Label : MonoBehaviour
             string SelName = pm.Set_selName(s.name);
             GameObject protein = pm.FindChildObject(SelName);
 
-            if (protein.activeInHierarchy)
+            if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures, s.name)] == 1)
             {
                 //插入原本代码
                 Transform loadedMolT = GameObject.Find("LoadedMolecules").transform;
@@ -559,7 +559,7 @@ public class Label : MonoBehaviour
             string SelName = pm.Set_selName(s.name);
             GameObject protein = pm.FindChildObject(SelName);
 
-            if (protein.activeInHierarchy)
+            if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures, s.name)] == 1)
             {
                 //插入原本代码
                 Transform loadedMolT = GameObject.Find("LoadedMolecules").transform;
@@ -651,7 +651,7 @@ public class Label : MonoBehaviour
             string SelName = pm.Set_selName(s.name);
             GameObject protein = pm.FindChildObject(SelName);
 
-            if (protein.activeInHierarchy)
+            if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures, s.name)] == 1)
             {
                 //插入原本代码
                 Transform loadedMolT = GameObject.Find("LoadedMolecules").transform;
@@ -721,7 +721,7 @@ public class Label : MonoBehaviour
             string SelName = pm.Set_selName(s.name);
             GameObject protein = pm.FindChildObject(SelName);
 
-            if (protein.activeInHierarchy)
+            if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures, s.name)] == 1)
             {
                 //插入原本代码
                 Transform loadedMolT = GameObject.Find("LoadedMolecules").transform;

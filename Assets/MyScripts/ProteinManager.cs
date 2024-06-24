@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using TMPro;
 using UMol;
 using UMol.API;
@@ -13,10 +14,16 @@ public class ProteinManager : MonoBehaviour
     public int MaxCurrent = 3;
     public int MyCurrent = 0;
     public int _myCurrent = -1;
+
+    //用于保存名称
     public string[] MyloadedStructures = new string[3] { "Protein_1", "Protein_2", "Protein_3" };
+    //用于切换判定
+    public int[] SwitchNumber = new int[3] { 1, 1, 1 };
 
     //创建数组指向蛋白质切换按钮
     public Toggle[] SwitchProtein = new Toggle[3];
+    //指向蛋白质显示按钮
+    public Toggle[] DisplayProtein = new Toggle[3];
 
 
     //监听toggle按钮
@@ -52,12 +59,21 @@ public class ProteinManager : MonoBehaviour
                 if (SwitchProtein[MyCurrent] != null)
                 {
                     // 获取与 Toggle 组件相关联的 Label 组件
-                    Text label = SwitchProtein[MyCurrent].GetComponentInChildren<Text>();
+                    //蛋白质切换toggle
+                    Text label_1 = SwitchProtein[MyCurrent].GetComponentInChildren<Text>();
+                    //蛋白质显示toggle
+                    Text label_2 = DisplayProtein[MyCurrent].GetComponentInChildren<Text>();
 
-                    if (label != null)
+                    if (label_1 != null)
                     {
                         // 设置 Label 组件的文本
-                        label.text = MyloadedStructures[MyCurrent];
+                        label_1.text = MyloadedStructures[MyCurrent];
+                    }
+
+                    if (label_2 != null)
+                    {
+                        // 设置 Label 组件的文本
+                        label_2.text = MyloadedStructures[MyCurrent];
                     }
                 }
             }
@@ -65,50 +81,7 @@ public class ProteinManager : MonoBehaviour
     }
 
 
-    public void test()
-    {
-        UnityMolStructureManager sm = UnityMolMain.getStructureManager();
-        UnityMolStructure s = sm.GetCurrentStructure();
-
-        Debug.Log(sm.loadedStructures.Count);
-        if (sm.loadedStructures.Count == -1)
-        {
-            Debug.Log(-1);
-        }
-    }
-
-
-    /*利用load按钮进行保存
-    //把蛋白质名称同步存入自建的MyloadedStructures，并把文本切换为蛋白质名称
-    public void SaveProtein()
-    {
-        UnityMolStructureManager sm = UnityMolMain.getStructureManager();
-        UnityMolStructure s = sm.GetCurrentStructure();
-
-        //保存蛋白质的名称到数组中
-        MyCurrent = sm.loadedStructures.Count-1;
-        MyloadedStructures[MyCurrent] = s.name;
-
-        //切换文本名称到toggle按钮
-        if (MyCurrent < MaxCurrent)
-        {
-            if (SwitchProtein[MyCurrent] != null)
-            {
-                // 获取与 Toggle 组件相关联的 Label 组件
-                Text label = SwitchProtein[MyCurrent].GetComponentInChildren<Text>();
-
-                if (label != null)
-                {
-                    // 设置 Label 组件的文本
-                    label.text = MyloadedStructures[MyCurrent];
-                }
-            }
-        }
-    }
-    */
-
-
-    // Toggle 值改变事件处理方法,通过toggle的Text文本名称修改激活状态
+    // Toggle 值改变事件处理方法,通过toggle的Text文本名称修改 *切换判定
     public void ToggleValueChanged(Toggle changedToggle)
     {
         // 从 Toggle 的子项中获取 Label 组件
@@ -123,11 +96,56 @@ public class ProteinManager : MonoBehaviour
 
             if (childObject != null)
             {
-                childObject.SetActive(changedToggle.isOn);
+                SwitchChange(label.text, changedToggle.isOn);
             }
         }
     }
 
+
+    //通过toggle值改变事件，通过文本名称进行 *显示切换
+    public void DisplayToggleValueChanged(Toggle displayToggle)
+    {
+        // 从 Toggle 的子项中获取 Label 组件
+        Text label = displayToggle.GetComponentInChildren<Text>();
+
+        if (label != null)
+        {
+            //提取label的Text文本
+            string selName = Set_selName(label.text);
+
+            GameObject childObject = FindChildObject(selName);
+
+            if (childObject != null)
+            {
+                childObject.SetActive(displayToggle.isOn);
+            }
+        }
+    }
+
+
+    //修改切换判定的判定数字s
+    public void SwitchChange(string name,bool toggle_isOn)
+    {
+        int index = GetIndex(MyloadedStructures, name);
+
+        if (index != -1)
+        {
+            if (toggle_isOn == true)
+            {
+                SwitchNumber[index] = 1;
+            }
+            else
+            {
+                SwitchNumber[index] = 0;
+            }
+        }
+    }
+
+    //通过名称获取数组索引
+    public int GetIndex(string[] array, string value)
+    {
+        return System.Array.IndexOf(array, value);
+    }
 
     //格式化名称
     public string Set_selName(string name)
@@ -175,6 +193,8 @@ public class ProteinManager : MonoBehaviour
     }
 }
 
+
+//相关脚本：APIPython，Label，ManagerScript
 //需要添加的判定代码
 /*
                  //以下为增加的引用代码
@@ -187,14 +207,13 @@ public class ProteinManager : MonoBehaviour
         string SelName = pm.Set_selName(s.name);
         GameObject protein = pm.FindChildObject(SelName);
 
-                if (protein.activeInHierarchy)
+                if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures,s.name)] == 1)
                 {
-
 
                  //插入的原本的代码
 
-                 //原本代码插入
 
+                 //原本代码插入
 
                  }
                  //增加的判定代码

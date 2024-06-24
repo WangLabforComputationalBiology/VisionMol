@@ -923,13 +923,10 @@ public class APIPython : MonoBehaviour {
             public static void showAs(string type)
             {
 
-
-
                 //以下为增加的引用代码
                 GameObject pc = getProteinController();
                 ProteinManager pm = getProteinManager(pc);
                 //以上为增加的引用代码
-
 
 
                 UnityMolRepresentationManager repManager = UnityMolMain.getRepresentationManager();
@@ -950,13 +947,11 @@ public class APIPython : MonoBehaviour {
                     foreach (UnityMolStructure s in sm.loadedStructures)
                     {
 
-
-
                         //增加的判定语句代码
                         string SelName = pm.Set_selName(s.name);
                         GameObject protein = pm.FindChildObject(SelName);
 
-                        if (protein.activeInHierarchy)
+                        if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures,s.name)] == 1)
                         {
                             //插入的原本的代码
                             foreach (UnityMolRepresentation r in s.representations)
@@ -968,20 +963,17 @@ public class APIPython : MonoBehaviour {
                         //增加的判定代码
 
 
-
                     }
 
 
                     foreach (UnityMolStructure s in sm.loadedStructures)
                     {
 
-
-
                         //增加的判定语句代码
                         string SelName = pm.Set_selName(s.name);
                         GameObject protein = pm.FindChildObject(SelName);
 
-                        if (protein.activeInHierarchy)
+                        if (pm.SwitchNumber[pm.GetIndex(pm.MyloadedStructures, s.name)] == 1)
                         {
                             //插入的原本的代码
                             List<UnityMolRepresentation> existingReps = repManager.representationExists(s.ToSelectionName(), repType);
@@ -1000,7 +992,6 @@ public class APIPython : MonoBehaviour {
                             //原本代码插入
                         }
                         //增加用来判定的代码
-
 
 
                     }

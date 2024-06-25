@@ -1,49 +1,49 @@
-# VisionMol 1.0.0 公开版本
+# VisionMol 1.0 public release
 
-VisionMol 是一款专为 VR 设计的蛋白质分子可视化应用。它可以让用户在沉浸式的 3D 虚拟环境中直观查看和操作蛋白质等生物大分子结构模型。
+VisionMol is a protein molecule visualization app specifically designed for VR. It allows users to visually view and manipulate structural models of biological macromolecules such as proteins in an immersive 3D virtual environment.
 
-## VisionMol 1.0 功能
+## VisionMol 1.0 Features
 
-1. **多分子加载**
-   - 支持同时加载多个 PDB 格式的分子文件到 VR 场景中。
+1. **Multi-molecular loading**
+- Supports simultaneous loading of multiple PDB format molecular files into VR scenes.
 
-2. **分子表示方式**
-   - 支持多种经典的分子表示方式,如线框、球棍、球模、曲面和蛋白质卡通等。
-   - 支持高级超球(Hyperball)表示方式,提供流畅的视觉效果。
+2. **Molecular representation**
+- Supports a variety of classical molecular representations, such as wireframes, sticks, ball molds, surfaces and protein cartoons.
+- Support advanced Hyperball representation to provide smooth visual effects.
 
-3. **测量功能**
-   - 支持测量分子中任意两个原子之间的距离。
+3. **Measurement function**
+- Supports measurement of the distance between any two atoms in a molecule.
 
-4. **分子拼接**
-   - 支持将多个分子模型合并拼接成一个整体模型。
+4. **Molecular splicing**
+- Support for combining multiple molecular models into one overall model.
 
-5. **分子标签**
-   - 支持在 3D 分子模型中显示或隐藏各个原子的标签。
+5. **Molecular tags**
+- Support for showing or hiding individual atom labels in 3D molecular models.
 
-6. **虚拟现实交互**
-   - 支持通过 VR 手柄进行自然的三维交互,如平移、旋转和缩放等操作。
+6. **Virtual Reality interaction**
+- Supports natural 3D interaction through VR gamepads, such as panning, rotating and zooming.
 
-7. **残基颜色分割显示**
-   - 可以根据残基将分子模型按残基划分不同的颜色块进行显示。
+7. **Residue color segmentation display**
+- The molecular model can be divided into different color blocks according to residues for display.
 
-8. **二级结构颜色调整**
-   - 可以自定义调整蛋白质二级结构(α-螺旋、β-折叠等)的颜色显示。
+8. **Secondary structure color adjustment**
+- The color display of protein secondary structures (α-helix, β-fold, etc.) can be customized.
 
-## 要求
+## Requirements
 
-- VisionMol 基于游戏引擎 Unity。
-- 此版本在 Unity 2021.3.34f1c1 LTS 上运行,在 Windows 上进行了测试。主要开发是在 Windows 上完成的。
+- VisionMol is based on game engine Unity.
+- This version runs on Unity 2021.3.34f1c1 LTS, tested on Windows. The main development is done on Windows.
+- The hardware supported by visionmol includes Rhino X, Rhino X Pro,Meta Quest 3,Meta Quest Pro.
+## How to use
 
-## 使用说明
+1. Open the project with Unity 2021.3.34f1c1.
+2. 'MainScene.unity' is the main scene file.
+3. Load the required PDB molecular file from the menu.
+4. Use VR gamepad for 3D interaction, viewing and operating molecular models.
+5. Switch the visual representation of molecules, measure distance, merge molecules, adjust residue color segmentation and secondary structure color and other functions through the interface menu.
 
-1. 使用 Unity 2021.3.34f1c1 版本打开项目。
-2. `MainScene.unity` 是主场景文件。
-3. 通过界面菜单加载所需的 PDB 格式分子文件。
-4. 使用 VR 手柄进行三维交互,查看和操作分子模型。
-5. 通过界面菜单切换分子的可视化表示方式、测量距离、合并分子、调整残基颜色分割和二级结构颜色等功能。
+## Precautions
 
-## 注意事项
-
-- 使用 VisionMol 需要配置好相应的虚拟现实硬件设备。
-- 针对不同操作系统,用户可能需要安装特定的运行库或驱动程序。
-- 建议使用高性能的计算机硬件,以获得流畅的虚拟现实体验。
+- Using VisionMol requires configuring the appropriate virtual reality hardware.
+- For different operating systems, users may need to install specific runtimes or drivers.
+- High performance computer hardware is recommended for a smooth VR experience.

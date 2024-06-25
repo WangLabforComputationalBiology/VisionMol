@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
-    guid: 984b8825009ebfe41a149e4ab78ff247
+    guid: 38927d2bf66a1544786b580168e6fbc1
   m_configObjects:
     Ximmerse.XR.XimmerseXRSettings: {fileID: 11400000, guid: 05b7764e4fc9c884780d9b92eb351048, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9da4120cf4a856d4ca0aa513ab849151, type: 2}

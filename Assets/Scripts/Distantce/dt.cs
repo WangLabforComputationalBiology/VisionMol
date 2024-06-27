@@ -52,23 +52,44 @@ namespace UMol
 
         void Update()
         {
-            if (Input.GetMouseButtonDown(0))
+            var rightDevice = new List<InputDevice>();
+
+            var leftdevice = new List<InputDevice>();
+
+            bool menuValue, gripValue, triggerValue, primaryValue, secondaryValue, menuValueleft;
+
+            float triggerForce;
+
+            Vector2 joystick;
+
+            InputDevices.GetDevicesAtXRNode(XRNode.RightHand, rightDevice);
+
+            InputDevices.GetDevicesAtXRNode(XRNode.LeftHand, leftdevice);
+
+            if (rightDevice.Count != 0 && leftdevice.Count != 0)
             {
-                //Debug.Log("1");
-                UnityMolAtom a = getAtomPointed(leftController) ?? getAtomPointed(rightController);
-                if (a != null)
+                InputDevice rightcontroller = rightDevice[0];
+
+                InputDevice leftcontroller = leftdevice[0];
+
+                if (rightcontroller.TryGetFeatureValue(CommonUsages.primaryButton, out primaryValue) && primaryValue)
                 {
-                    selM.selectionMode = UnityMolSelectionManager.SelectionMode.Atom;
-                    selectedAtoms.Add(a);
-                    if (selectedAtoms.Count % 2 == 0)
+                    // 按钮被按下时执行的操作
+                    UnityMolAtom a = getAtomPointed(leftController) ?? getAtomPointed(rightController);
+                    if (a != null)
                     {
-                        HighlightAtomg(a);
-                        HighlightAtoms();
-                        ConnectAtoms();
-                    }
-                    else
-                    {
-                        HighlightAtomy(a);
+                        selM.selectionMode = UnityMolSelectionManager.SelectionMode.Atom;
+                        selectedAtoms.Add(a);
+                        if (selectedAtoms.Count % 2 == 0)
+                        {
+                            HighlightAtomg(a);
+                            HighlightAtoms();
+                            ConnectAtoms();
+                        }
+                        else
+                        {
+                            HighlightAtomy(a);
+                        }
                     }
                 }
             }

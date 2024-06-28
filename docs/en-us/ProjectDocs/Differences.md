@@ -1,0 +1,1 @@
+There is roughly no difference in the functionality between versions 1.0 and 1.1. Characters in version 1.0 can move while those in version 1.1 cannot. Characters in version 1.1 can teleport. 1.0 runs on the Rinox Pro device, and 1.1 runs on the Meta Quest 3 device.

@@ -10,3 +10,4 @@
   * [7. Divide Different Color Blocks by Residue](/en-us/ProjectDocs/根据residue划分不同色块.md)
   * [8. How to Perform Molecular Alignment](/en-us/ProjectDocs/如何进行分子对齐.md)
   * [9. Secondary Structure Colors](/en-us/ProjectDocs/二级结构颜色.md)
+  * [10. Differences between versions 1.0 and 1.1](/en-us/ProjectDocs/Differences.md)

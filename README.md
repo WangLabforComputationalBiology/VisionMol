@@ -1,4 +1,4 @@
-# VisionMol 1.1 public release
+# VisionMol 1.1 (Meta Quest Version) public release
 
 VisionMol is a protein molecule visualization app specifically designed for VR. It allows users to visually view and manipulate structural models of biological macromolecules such as proteins in an immersive 3D virtual environment.
 
